@@ -1057,7 +1057,7 @@ section,
   /* width: calc(10vw);  */
   /* width: 60vw;  */
 
-  object-fit: cover;
+  /* object-fit: cover; */
   /* height: calc(80vh);  */
   /* height: 80vh;  */
   /* width: 100vw; */
@@ -1072,9 +1072,13 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-
+.about{
+  border: 2px solid red;
+  /* padding: 10px; */
+}
 
 .home-about-img {
+  /* margin: 0; */
   box-shadow: 20px 20px 0px var(--accent-color);
   height: 90%;
   width: 90%;
