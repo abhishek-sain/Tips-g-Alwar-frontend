@@ -1073,7 +1073,7 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* padding: 10px; */
 }
 
