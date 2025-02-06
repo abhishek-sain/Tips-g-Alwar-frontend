@@ -88,9 +88,9 @@
    */
   function aosInit() {
     AOS.init({
-      duration: 400,
+      duration: 600,
       easing: 'ease-in-out',
-      once: true,
+      once: false,
       mirror: false
     });
   }
@@ -132,61 +132,11 @@
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const texts = [
-    "Empower Your Future\nwith Practical Skills!",
-    "Shape Your Career with Us!",
-    "Unlock Your Potential with\nExpert Guidance!",    
-    "Your Success Starts Here!",
-    "Achieve More with\nReal-World Training!"
-];
-
-  const typingElement = document.getElementById("typing-text");
-  const typingSpeed = 50; // Typing speed
-  const erasingSpeed = 25; // Erasing speed
-  const delayBetweenCycles = 1000; // Delay between cycles
-  let textIndex = 0; // Tracks the current text
-  let charIndex = 0; // Tracks the character index in the current text
-  let isErasing = false;
-
-  function typeText() {
-    const currentText = texts[textIndex];
-
-    if (!isErasing) {
-      // Typing phase
-      if (charIndex < currentText.length) {
-        if (currentText[charIndex] === "\n") {
-          typingElement.innerHTML += "<br />";
-        } else {
-          typingElement.innerHTML += currentText[charIndex];
-        }
-        charIndex++;
-        setTimeout(typeText, typingSpeed);
-      } else {
-        // Delay before erasing starts
-        setTimeout(() => {
-          isErasing = true;
-          typeText();
-        }, delayBetweenCycles);
-      }
-    } else {
-      // Erasing phase
-      if (charIndex > 0) {
-        const visibleText = currentText.substring(0, charIndex);
-        typingElement.innerHTML = visibleText.replace(/\n/g, "<br />");
-        charIndex--;
-        setTimeout(typeText, erasingSpeed);
-      } else {
-        // Move to the next text and reset content
-        isErasing = false;
-        typingElement.innerHTML = ""; // Clear content completely
-        textIndex = (textIndex + 1) % texts.length; // Move to the next line
-        setTimeout(typeText, typingSpeed);
-      }
-    }
+window.addEventListener("scroll", function () {
+  let header = document.getElementById("header");
+  if (window.scrollY > 50) { // Jab 50px se jyada scroll ho
+      header.classList.add("scrolled");
+  } else {
+      header.classList.remove("scrolled");
   }
-
-  typeText();
 });
-
-

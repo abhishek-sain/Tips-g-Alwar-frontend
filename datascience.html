@@ -37,6 +37,21 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+      body {
+        overflow-block: scroll;
+        overflow-x: hidden;
+      }
+      .header {
+        background-color: black;
+        transition: all 0.5s;
+        background-color: rgb(233, 233, 233);
+        background-color: var(--heading-color);
+        color: var(--background-color);
+        position: relative;
+        width: 100vw;
+      }
+    </style>
   </head>
 
   <body class="course-details-page">
@@ -66,10 +81,10 @@
             <li class="dropdown"><a href="courses.html"  class="active"><span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="software.html">Software Engineering</a></li>
-                <li><a href="blockchain.html">Blockchain Technology</a></li>
                 <li><a href="datascience.html">Data Science</a></li>
-                <li><a href="cybersecurity.html">Cybersecurity</a></li>
                 <li><a href="digitalmarketing.html">Digital Marketing</a></li>
+                <li><a href="blockchain.html">Blockchain Technology</a></li>
+                <li><a href="cybersecurity.html">Cybersecurity</a></li>
                 <li><a href="ai-ml.html">AI/ML</a></li>
               </ul>
             </li>
@@ -152,14 +167,14 @@
                 class="img-fluid"
                 alt=""
                 data-aos="slide-left"
-                data-aos-delay="200"
+                data-aos-delay="10"
                 data-aos-easing="ease"
               />
             </div>
             <div class="col-lg-6 order-2 order-lg-1 content">
               <h3
                 data-aos="fade-down"
-                data-aos-delay="200"
+                data-aos-delay="10"
                 data-aos-easing="ease"
               >
               DATA SCIENCE
@@ -167,7 +182,7 @@
               <p
                 class="fst-italic"
                 data-aos="slide-right"
-                data-aos-delay="200"
+                data-aos-delay="10"
                 data-aos-easing="ease"
               >
                 <i
@@ -179,7 +194,7 @@
               <p
                 class="fst-italic"
                 data-aos="slide-right"
-                data-aos-delay="200"
+                data-aos-delay="10"
                 data-aos-easing="ease"
               >
                 <i
@@ -191,7 +206,7 @@
               <p
                 class="fst-italic"
                 data-aos="slide-right"
-                data-aos-delay="200"
+                data-aos-delay="10"
                 data-aos-easing="ease"
               >
                 <i
@@ -203,7 +218,7 @@
               <p
                 class="fst-italic"
                 data-aos="slide-right"
-                data-aos-delay="200"
+                data-aos-delay="10"
                 data-aos-easing="ease"
               >
                 <i
@@ -231,7 +246,7 @@
                   justify-content: center;
                 "
                 data-aos="fade-up"
-                data-aos-delay="200"
+                data-aos-delay="10"
               >
                 <div
                   style="
@@ -241,12 +256,13 @@
                     padding: 10px;
                     color: white;
                     border-radius: 10px;
-                    background: #29206f;
+                    background:  var(--accent-color);
+
                     flex: 1;
                     margin-right: 10px;
                   "
                   data-aos="fade-up"
-                  data-aos-delay="200"
+                  data-aos-delay="10"
                 >
                   TOPICS
                 </div>
@@ -258,12 +274,13 @@
                     padding: 10px;
                     color: white;
                     border-radius: 10px;
-                    background: #29206f;
+                    background:  var(--accent-color);
+
                     flex: 1;
                     margin-right: 10px;
                   "
                   data-aos="fade-up"
-                  data-aos-delay="200"
+                  data-aos-delay="10"
                 >
                   DURATION
                 </div>
@@ -282,18 +299,19 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background:  var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -305,7 +323,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
             </div>
@@ -315,7 +333,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Basic Mathematics</h5>
@@ -324,7 +342,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Computer Fundamentals</h5>
@@ -333,7 +351,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>HTML</h5>
@@ -342,7 +360,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>CSS</h5>
@@ -351,7 +369,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Bootstrap</h5>
@@ -368,18 +386,19 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background:  var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -391,7 +410,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
             </div>
@@ -403,7 +422,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Fundamentals of Python
@@ -413,7 +432,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Python Libraries
@@ -423,7 +442,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Data Visualization
@@ -433,7 +452,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>SQL & SQL Application
@@ -451,18 +470,19 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background:  var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -474,7 +494,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
             </div>
@@ -486,7 +506,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>DSA</h5>
@@ -495,7 +515,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Statistics</h5>
@@ -504,7 +524,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Mathematics for Data Science
@@ -514,7 +534,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>ML & Applications
@@ -532,18 +552,19 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background:  var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -555,7 +576,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
             </div>
@@ -567,7 +588,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>ML Models & Applications
@@ -577,7 +598,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Deep Learning
@@ -595,18 +616,19 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background:  var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -618,7 +640,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
             </div>
@@ -629,7 +651,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>End-to-End ML & DL Projects
@@ -639,7 +661,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Foundational Large Language Model
@@ -649,7 +671,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Prompt Engineering
@@ -659,7 +681,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Embeddings and Vector Databases
@@ -677,18 +699,19 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background:  var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -700,7 +723,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
             </div>
@@ -711,7 +734,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Generative Agents
@@ -721,7 +744,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Basic Gen AI Models
@@ -731,7 +754,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Gen AI Tools
@@ -741,7 +764,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>AI Databases & Gen AI Projects
@@ -759,18 +782,19 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background:  var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -782,7 +806,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
             </div>
@@ -813,7 +837,7 @@
                   justify-content: center;
                 "
                 data-aos="fade-up"
-                data-aos-delay="200"
+                data-aos-delay="10"
               >
                 <div
                   style="
@@ -823,12 +847,13 @@
                     padding: 10px;
                     color: white;
                     border-radius: 10px;
-                    background: #29206f;
+                    background:  var(--accent-color);
+
                     flex: 1;
                     margin-right: 10px;
                   "
                   data-aos="fade-up"
-                  data-aos-delay="200"
+                  data-aos-delay="10"
                 >
                   TOPICS
                 </div>
@@ -840,12 +865,13 @@
                     padding: 10px;
                     color: white;
                     border-radius: 10px;
-                    background: #29206f;
+                    background:  var(--accent-color);
+
                     flex: 1;
                     margin-right: 10px;
                   "
                   data-aos="fade-up"
-                  data-aos-delay="200"
+                  data-aos-delay="10"
                 >
                   DURATION
                 </div>
@@ -864,18 +890,19 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background:  var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -887,7 +914,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
             </div>
@@ -897,7 +924,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Python</h5>
@@ -906,7 +933,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Python Libraries and Data Visualization
@@ -916,7 +943,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Statistics & DSA
@@ -934,18 +961,19 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background:  var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -957,7 +985,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
             </div>
@@ -969,7 +997,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Machine Learning or ML Projects
@@ -979,7 +1007,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Deep Learning or DL Projects
@@ -997,18 +1025,19 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background:  var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -1020,7 +1049,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
             </div>
@@ -1032,7 +1061,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>SQL and NoSQL
@@ -1042,7 +1071,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Basics of Gen AI
@@ -1052,7 +1081,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>Fundamentals of Gen AI
@@ -1062,7 +1091,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="10"
               data-aos-offset="100"
             >
               <h5>LLM & Gen AI Projects
@@ -1080,18 +1109,19 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background:  var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -1103,7 +1133,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 data-aos-offset="100"
               ></div>
             </div>
@@ -1127,7 +1157,7 @@
         </div>
         <!-- End Section Title -->
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container" data-aos="fade-up" data-aos-delay="10">
           <div class="swiper init-swiper">
             <script type="application/json" class="swiper-config">
               {
@@ -1319,7 +1349,7 @@
     <footer
       id="footer"
       class="footer position-relative light-background"
-      style="border-top: 3px solid #29206f"
+      style="border-top: 3px solid var(--accent-color)"
     >
       <div class="container footer-top">
         <div class="row" style="display: flex; justify-content: space-around">
@@ -1377,7 +1407,6 @@
 
       <div
         class="container copyright text-center mt-4"
-        style="background-color: #29206f; color: white"
       >
         <p>
           © <span>Copyright</span>

@@ -37,6 +37,22 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
+
+    <style>
+      body {
+        overflow-block: scroll;
+        overflow-x: hidden;
+      }
+      .header {
+        background-color: black;
+        transition: all 0.5s;
+        background-color: rgb(233, 233, 233);
+        background-color: var(--heading-color);
+        color: var(--background-color);
+        position: relative;
+        width: 100vw;
+      }
+    </style>
   </head>
 
   <body class="course-details-page">
@@ -64,20 +80,26 @@
             </li>
             <li><a href="about.html">About</a></li>
             <!-- <li><a href="courses.html" class="active">Courses</a></li> -->
-            <li class="dropdown"><a href="courses.html"  class="active"><span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown">
+              <a href="courses.html" class="active"
+                ><span>Courses</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
               <ul>
                 <li><a href="software.html">Software Engineering</a></li>
-                <li><a href="blockchain.html">Blockchain Technology</a></li>
                 <li><a href="datascience.html">Data Science</a></li>
-                <li><a href="cybersecurity.html">Cybersecurity</a></li>
                 <li><a href="digitalmarketing.html">Digital Marketing</a></li>
+                <li><a href="blockchain.html">Blockchain Technology</a></li>
+                <li><a href="cybersecurity.html">Cybersecurity</a></li>
                 <li><a href="ai-ml.html">AI/ML</a></li>
               </ul>
             </li>
             <!-- <li><a href="trainers.html">Trainers</a></li> -->
             <li><a href="events.html">Events</a></li>
             <li><a href="exam.html" class="">Exam</a></li>
-            <li><a href="contact.html" style="padding-right: 130px;">Contact</a></li>
+            <li>
+              <a href="contact.html" style="padding-right: 130px">Contact</a>
+            </li>
             <li>
               <a
                 class="btn-getstarted"
@@ -153,14 +175,14 @@
                 class="img-fluid"
                 alt=""
                 data-aos="slide-left"
-                data-aos-delay="300"
+                data-aos-delay="10"
                 data-aos-easing="ease"
               />
             </div>
             <div class="col-lg-6 order-2 order-lg-1 content">
               <h3
                 data-aos="fade-down"
-                data-aos-delay="300"
+                data-aos-delay="10"
                 data-aos-easing="ease"
               >
                 Software Engineering
@@ -168,7 +190,7 @@
               <p
                 class="fst-italic"
                 data-aos="slide-right"
-                data-aos-delay="300"
+                data-aos-delay="10"
                 data-aos-easing="ease"
               >
                 <i
@@ -182,7 +204,7 @@
               <p
                 class="fst-italic"
                 data-aos="slide-right"
-                data-aos-delay="300"
+                data-aos-delay="10"
                 data-aos-easing="ease"
               >
                 <i
@@ -198,7 +220,7 @@
               <p
                 class="fst-italic"
                 data-aos="slide-right"
-                data-aos-delay="300"
+                data-aos-delay="10"
                 data-aos-easing="ease"
               >
                 <i
@@ -211,7 +233,7 @@
               <p
                 class="fst-italic"
                 data-aos="slide-right"
-                data-aos-delay="300"
+                data-aos-delay="10"
                 data-aos-easing="ease"
               >
                 <i
@@ -227,7 +249,6 @@
       </section>
       <!-- /Courses Course Details Section -->
 
-      
       <section id="about-us" class="section about-us courses-course-details">
         <div class="container">
           <!-- <div class="row gy-4"> -->
@@ -240,8 +261,7 @@
                   align-items: center;
                   justify-content: center;
                 "
-                data-aos="fade-up"
-                data-aos-delay="200"
+                data-aos-delay="10"
               >
                 <div
                   style="
@@ -251,12 +271,13 @@
                     padding: 10px;
                     color: white;
                     border-radius: 10px;
-                    background: #29206f;
+                    background: var(--accent-color);
+
                     flex: 1;
                     margin-right: 10px;
                   "
-                  data-aos="fade-up"
-                  data-aos-delay="200"
+                  data-aos="slide-right"
+                  data-aos-delay="10"
                 >
                   TOPICS
                 </div>
@@ -268,12 +289,13 @@
                     padding: 10px;
                     color: white;
                     border-radius: 10px;
-                    background: #29206f;
+                    background: var(--accent-color);
+
                     flex: 1;
                     margin-right: 10px;
                   "
-                  data-aos="fade-up"
-                  data-aos-delay="200"
+                  data-aos="slide-left"
+                  data-aos-delay="10"
                 >
                   DURATION
                 </div>
@@ -292,18 +314,18 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background: var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -315,8 +337,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
             </div>
           </div>
@@ -325,26 +346,23 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Basic Mathematics</h5>
-              <h5>   0.5 Months</h5>
+              <h5>0.5 Months</h5>
             </div>
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Computer Fundamentals</h5>
-              <h5>   0.5 Months</h5>
+              <h5>0.5 Months</h5>
             </div>
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>HTML</h5>
               <h5>1 Month</h5>
@@ -352,8 +370,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>CSS</h5>
               <h5>1 Month</h5>
@@ -361,8 +378,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Bootstrap</h5>
               <h5>1 Month</h5>
@@ -378,18 +394,18 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background: var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -401,8 +417,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
             </div>
           </div>
@@ -413,8 +428,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Projects (HTML + CSS + Bootstrap)</h5>
               <h5>1 Month</h5>
@@ -422,8 +436,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>JavaScript Fundamentals</h5>
               <h5>1 Month</h5>
@@ -431,8 +444,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Advanced JavaScript (ES6+ Features)</h5>
               <h5>1 Month</h5>
@@ -440,8 +452,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Projects</h5>
               <h5>1 Month</h5>
@@ -457,18 +468,18 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background: var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -480,8 +491,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
             </div>
           </div>
@@ -492,8 +502,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Data Structures</h5>
               <h5>1.5 Months</h5>
@@ -501,8 +510,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Algorithms</h5>
               <h5>1.5 Months</h5>
@@ -510,8 +518,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Competitive Programming</h5>
               <h5>1 Month</h5>
@@ -527,18 +534,18 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background: var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -550,8 +557,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
             </div>
           </div>
@@ -562,8 +568,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>React.js (Library)</h5>
               <h5>1 Month</h5>
@@ -571,8 +576,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Redux (State Management)</h5>
               <h5>1 Month</h5>
@@ -580,8 +584,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Advanced React Concepts (Hooks, Context API, etc.)</h5>
               <h5>1 Month</h5>
@@ -589,8 +592,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Frontend - Projects</h5>
               <h5>1 Month</h5>
@@ -606,18 +608,18 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background: var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -629,8 +631,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
             </div>
           </div>
@@ -640,8 +641,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Node.js (Backend Development)</h5>
               <h5>2 Months</h5>
@@ -649,8 +649,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Express.js (Web Framework)</h5>
               <h5>2 Months</h5>
@@ -666,18 +665,18 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background: var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -689,8 +688,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
             </div>
           </div>
@@ -700,8 +698,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>MongoDB (Database)</h5>
               <h5>1 Month</h5>
@@ -709,8 +706,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Projects (MERN Stack)</h5>
               <h5>2 Months</h5>
@@ -718,8 +714,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Interview Preparation</h5>
               <h5>1 Month</h5>
@@ -735,18 +730,18 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background: var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -758,8 +753,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
             </div>
           </div>
@@ -769,11 +763,6 @@
         </div>
         <!-- </div> -->
       </section>
-
-
-
-
-
 
       <!-- 1 Year Program -->
       <section id="about-us" class="section about-us courses-course-details">
@@ -789,7 +778,7 @@
                   justify-content: center;
                 "
                 data-aos="fade-up"
-                data-aos-delay="200"
+                data-aos-delay="10"
               >
                 <div
                   style="
@@ -799,12 +788,13 @@
                     padding: 10px;
                     color: white;
                     border-radius: 10px;
-                    background: #29206f;
+                    background: var(--accent-color);
+
                     flex: 1;
                     margin-right: 10px;
                   "
                   data-aos="fade-up"
-                  data-aos-delay="200"
+                  data-aos-delay="10"
                 >
                   TOPICS
                 </div>
@@ -816,12 +806,13 @@
                     padding: 10px;
                     color: white;
                     border-radius: 10px;
-                    background: #29206f;
+                    background: var(--accent-color);
+
                     flex: 1;
                     margin-right: 10px;
                   "
                   data-aos="fade-up"
-                  data-aos-delay="200"
+                  data-aos-delay="10"
                 >
                   DURATION
                 </div>
@@ -840,18 +831,18 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background: var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -863,8 +854,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
             </div>
           </div>
@@ -873,8 +863,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>HTML</h5>
               <h5>1 Month</h5>
@@ -882,8 +871,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>CSS</h5>
               <h5>1 Month</h5>
@@ -891,8 +879,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Bootstrap</h5>
               <h5>1 Month</h5>
@@ -900,8 +887,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>JavaScript (Basic + Advanced)</h5>
               <h5>1 Month</h5>
@@ -917,18 +903,18 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background: var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -940,8 +926,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
             </div>
           </div>
@@ -952,8 +937,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Projects</h5>
               <h5>1 Month</h5>
@@ -961,18 +945,15 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
-              <h5>Data Structures & Algorithms
-              </h5>
+              <h5>Data Structures & Algorithms</h5>
               <h5>1 Month</h5>
             </div>
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>React.js</h5>
               <h5>1 Month</h5>
@@ -980,8 +961,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Node.js</h5>
               <h5>1 Month</h5>
@@ -997,18 +977,18 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background: var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -1020,8 +1000,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
             </div>
           </div>
@@ -1032,8 +1011,7 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Express.js</h5>
               <h5>1 Month</h5>
@@ -1041,18 +1019,15 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
-              <h5>MongoDB (Database)
-              </h5>
+              <h5>MongoDB (Database)</h5>
               <h5>1 Month</h5>
             </div>
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
               <h5>Projects</h5>
               <h5>1 Month</h5>
@@ -1060,11 +1035,9 @@
             <div
               class="course-info d-flex justify-content-between align-items-center"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="100"
+              data-aos-delay="10"
             >
-              <h5>Interview Preparation
-              </h5>
+              <h5>Interview Preparation</h5>
               <h5>1 Month</h5>
             </div>
             <div
@@ -1078,18 +1051,18 @@
                 style="
                   border: none;
                   height: 5px;
-                  background: #29206f;
+                  background: var(--accent-color);
+
                   flex: 1;
                   margin-right: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
               <span
                 style="font-size: 18px; color: #ff1493"
                 data-aos="fade-up"
-                data-aos-delay="100"
+                data-aos-delay="10"
                 >★</span
               >
               <div
@@ -1101,8 +1074,7 @@
                   margin-left: 10px;
                 "
                 data-aos="flip-left"
-                data-aos-delay="100"
-                data-aos-offset="100"
+                data-aos-delay="10"
               ></div>
             </div>
           </div>
@@ -1113,9 +1085,6 @@
         <!-- </div> -->
       </section>
 
-
-
-
       <!-- Testimonials Section -->
       <section id="testimonials" class="testimonials section">
         <!-- Section Title -->
@@ -1125,7 +1094,7 @@
         </div>
         <!-- End Section Title -->
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container" data-aos="fade-up" data-aos-delay="10">
           <div class="swiper init-swiper">
             <script type="application/json" class="swiper-config">
               {
@@ -1153,16 +1122,12 @@
               }
             </script>
 
-            
-
             <div class="swiper-wrapper">
-
-
               <div class="swiper-slide">
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
                     <img
-                    src="assets/img/tips-g-students/rishav-testmonial.PNG"
+                      src="assets/img/tips-g-students/rishav-testmonial.PNG"
                       class="testimonial-img"
                       alt=""
                     />
@@ -1178,7 +1143,11 @@
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
                       <span
-                        >TIPS-G Alwar has been an excellent platform for my IT education. The hands-on approach and industry-oriented projects have helped me develop practical skills. The teaching methods are interactive, and the faculty is always supportive.</span
+                        >TIPS-G Alwar has been an excellent platform for my IT
+                        education. The hands-on approach and industry-oriented
+                        projects have helped me develop practical skills. The
+                        teaching methods are interactive, and the faculty is
+                        always supportive.</span
                       >
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
@@ -1186,7 +1155,6 @@
                 </div>
               </div>
               <!-- End testimonial item -->
-
 
               <div class="swiper-slide">
                 <div class="testimonial-wrap">
@@ -1209,7 +1177,11 @@
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
                       <span
-                        >I am grateful to TIPS-G Alwar for providing a learning environment that focuses on real-world applications. The exposure to industry projects and paid internships has helped me gain the confidence to succeed in the IT sector.</span
+                        >I am grateful to TIPS-G Alwar for providing a learning
+                        environment that focuses on real-world applications. The
+                        exposure to industry projects and paid internships has
+                        helped me gain the confidence to succeed in the IT
+                        sector.</span
                       >
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
@@ -1238,7 +1210,11 @@
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
                       <span
-                        >The education I received at TIPS-G Alwar has been instrumental in my growth as a software professional. The combination of expert instructors, hands-on projects, and industry exposure has prepared me for a successful career.</span
+                        >The education I received at TIPS-G Alwar has been
+                        instrumental in my growth as a software professional.
+                        The combination of expert instructors, hands-on
+                        projects, and industry exposure has prepared me for a
+                        successful career.</span
                       >
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
@@ -1267,7 +1243,11 @@
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
                       <span
-                        >TIPS-G Alwar offers exceptional guidance, and the interactive learning tools helped me understand complex concepts with ease. I am now confident about my skills in software development, thanks to the practical exposure I received here.</span
+                        >TIPS-G Alwar offers exceptional guidance, and the
+                        interactive learning tools helped me understand complex
+                        concepts with ease. I am now confident about my skills
+                        in software development, thanks to the practical
+                        exposure I received here.</span
                       >
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
@@ -1275,56 +1255,51 @@
                 </div>
               </div>
               <!-- End testimonial item -->
-              
-              
-                            <div class="swiper-slide">
-                              <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                  <img
-                                    src="assets/img/tips-g-students/himesh-testmonial.PNG"
-                                    class="testimonial-img"
-                                    alt=""
-                                  />
-                                  <h3>Himesh</h3>
-                                  <h4>Software Engineering Trainee</h4>
-                                  <div class="stars">
-                                    <i class="bi bi-star-fill"></i
-                                    ><i class="bi bi-star-fill"></i
-                                    ><i class="bi bi-star-fill"></i
-                                    ><i class="bi bi-star-fill"></i
-                                    ><i class="bi bi-star-fill"></i>
-                                  </div>
-                                  <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    <span
-                                      >TIPS-G Alwar stands out for its practical approach to learning. I’ve been able to work on industry projects, gain experience through internships, and acquire skills that make me job-ready. The team of mentors is fantastic!</span
-                                    >
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img
+                      src="assets/img/tips-g-students/himesh-testmonial.PNG"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Himesh</h3>
+                    <h4>Software Engineering Trainee</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span
+                        >TIPS-G Alwar stands out for its practical approach to
+                        learning. I’ve been able to work on industry projects,
+                        gain experience through internships, and acquire skills
+                        that make me job-ready. The team of mentors is
+                        fantastic!</span
+                      >
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
             </div>
             <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
       <!-- /Testimonials Section -->
-
-
-
     </main>
-
-
-    
-
-
 
     <footer
       id="footer"
       class="footer position-relative light-background"
-      style="border-top: 3px solid #29206f"
+      style="border-top: 3px solid var(--accent-color)"
     >
       <div class="container footer-top">
         <div class="row" style="display: flex; justify-content: space-around">
@@ -1380,10 +1355,7 @@
         </div>
       </div>
 
-      <div
-        class="container copyright text-center mt-4"
-        style="background-color: #29206f; color: white"
-      >
+      <div class="container copyright text-center mt-4">
         <p>
           © <span>Copyright</span>
           <strong class="px-1 sitename">Tips-g Alwar</strong>
