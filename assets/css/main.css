@@ -225,6 +225,8 @@ h6 {
   /* background-color: rgb(233, 233, 233); */
   background-color: var(--heading-color);
   color: var(--background-color);
+  /* background: transparent;
+  position: absolute; */
 }
 /* .header .logo {
   line-height: 1;
@@ -803,8 +805,8 @@ h6 {
   --heading-color: var(--contrast-color);
   color: var(--default-color);
   background-color: var(--background-color);
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: hidden; */
 }
 
 .page-title .heading img{
@@ -826,7 +828,7 @@ h6 {
 }
 
 .page-title nav {
-  /* background-color: color-mix(in srgb, var(--accent-color) 90%, black 5%); */
+  background-color: color-mix(in srgb, var(--accent-color) 90%, black 5%);
   padding: 20px 0;
 }
 
@@ -1052,8 +1054,8 @@ section,
   /* overflow: hidden;  */
   /* position: relative; */
 }
-
-.video-background {
+.video-background { display: block !important; }
+/* .video-background { */
   /* width: calc(10vw);  */
   /* width: 60vw;  */
 
@@ -1062,7 +1064,7 @@ section,
   /* height: 80vh;  */
   /* width: 100vw; */
   /* border: 2px solid red;  */
-}
+/* } */
 
 
 
