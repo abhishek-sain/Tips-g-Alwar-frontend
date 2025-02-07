@@ -1329,7 +1329,7 @@ section,
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   position: relative;
   /* border: 1px solid var(--accent-color); */
-  box-shadow: 10px 10px 20px var(--accent-color);
+  /* box-shadow: 10px 10px 20px var(--accent-color); */
 }
 
 .features .features-item i {
