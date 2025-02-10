@@ -160,7 +160,7 @@ document
     };
 
     try {
-      const response = await fetch("http://localhost:5000/api/form/submit", {
+      const response = await fetch("https://tips-g-alwar-backend.onrender.com/api/form/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
