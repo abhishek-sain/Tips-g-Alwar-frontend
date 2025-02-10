@@ -72,7 +72,8 @@
             <li>
               <a
                 class="btn-getstarted"
-                href="contact.html"
+                style="background-color: #29206f"
+                href="index.html"
                 >Get Started</a
               >
             </li>
@@ -108,8 +109,8 @@
           >
             <!-- <source src="assets/img/Blue Modern Technology YouTube Intro-main.mp4" type="video/mp4"> -->
             <source
-              src="assets/img/component/contact-low.mp4"
-              type="video/mp4"
+              src="assets/img/component/contact-video.webm"
+              type="video/webm"
             />
             Your browser does not support the video tag.
           </video>
@@ -166,8 +167,8 @@
 
           </div>
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="col-lg-8">
+            <form action="assets/js/main.js" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -176,6 +177,14 @@
 
                 <div class="col-md-6 ">
                   <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="number" class="form-control" name="number" placeholder="Mobile Number" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="text" class="form-control" name="qualification" placeholder="Your Qualification" required="">
                 </div>
 
                 <div class="col-md-12">
@@ -196,7 +205,48 @@
 
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>End Contact Form -->
+
+
+          <div class="col-lg-8">
+            <form id="contactForm" class="php-email-form" data-aos="fade-up" data-aos-delay="200" onsubmit="return false;">
+                <div class="row gy-4">
+    
+                    <div class="col-md-6">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    </div>
+    
+                    <div class="col-md-6">
+                        <input type="email" name="email" class="form-control" placeholder="Your Email" required="">
+                    </div>
+    
+                    <div class="col-md-6">
+                        <input type="number" name="number" class="form-control" placeholder="Mobile Number" required="">
+                    </div>
+    
+                    <div class="col-md-6">
+                        <input type="text" name="qualification" class="form-control" placeholder="Your Qualification" required="">
+                    </div>
+    
+                    <div class="col-md-12">
+                        <input type="text" name="subject" class="form-control" placeholder="Subject" required="">
+                    </div>
+    
+                    <div class="col-md-12">
+                        <textarea name="message" class="form-control" rows="6" placeholder="Message" required=""></textarea>
+                    </div>
+    
+                    <div class="col-md-12 text-center">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+    
+                        <button type="submit">Send Message</button>
+                    </div>
+    
+                </div>
+            </form>
+        </div>
 
         </div>
 
@@ -232,30 +282,30 @@
           </div>
         </div>
 
-       <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-<li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About us</a></li>
-              <li><a href="courses.html">Courses</a></li>
-              <li><a href="events.html">Events</a></li>
-              <li><a href="exam.html">Exam</a></li>
-              <li><a href="terms.html">Terms</a></li>
-              <li><a href="privacypolicy.html">Privacy policy</a></li>
-            </ul>
-          </div>
+        <div class="col-lg-2 col-md-3 footer-links" >
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
 
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Courses</h4>
-            <ul>
-              <li><a href="software.html">Software Engineering</a></li>
-              <li><a href="datascience.html">Data Science</a></li>
-              <li><a href="blockchain.html">Blockchain Technology</a></li>
-              <li><a href="ai-ml.html">AI/ML</a></li>
-              <li><a href="cybersecurity.html">Cybersecurity</a></li>
-              <li><a href="digitalmarketing.html">Digital Marketing</a></li>
-            </ul>
-          </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Courses</h4>
+          <ul>
+            <li><a href="#">Software Engineering</a></li>
+            <li><a href="#">Data Science</a></li>
+            <li><a href="#">Blockchain Technology</a></li>
+            <li><a href="#">AI/ML</a></li>
+            <li><a href="#">DevOps</a></li>
+            <li><a href="#">Cybersecurity</a></li>
+            <li><a href="#">Cloud Computing</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+          </ul>
+        </div>
 
         <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
           <h4>Our Newsletter</h4>
@@ -310,7 +360,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
