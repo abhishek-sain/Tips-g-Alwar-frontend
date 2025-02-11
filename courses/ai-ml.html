@@ -8,35 +8,35 @@
     <meta name="keywords" content="" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
 
     <!-- Vendor CSS Files -->
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
     <style>
       body {
         overflow-block: scroll;
@@ -59,9 +59,9 @@
       <div
         class="container-fluid container-xl position-relative d-flex align-items-center"
       >
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <a href="../index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <!-- <img src="../assets/img/logo.png" alt=""> -->
           <h1
             class="sitename nav-name"
             id="nav-name"
@@ -75,12 +75,17 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li>
-              <a href="index.html">Home<br /></a>
+              <a href="../index.html">Home<br /></a>
             </li>
-            <li><a href="about.html">About</a></li>
-            <li class="dropdown"><a href="courses.html"  class="active"><span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li><a href="../pages/about.html">About</a></li>
+            <!-- <li><a href="courses.html" class="active">Courses</a></li> -->
+            <li class="dropdown">
+              <a href="../pages/courses.html" class="active"
+                ><span>Courses</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
               <ul>
-                <li><a href="software.html">Software Engineering</a></li>
+                <li><a href="software.html">Software Development</a></li>
                 <li><a href="datascience.html">Data Science</a></li>
                 <li><a href="digitalmarketing.html">Digital Marketing</a></li>
                 <li><a href="blockchain.html">Blockchain Technology</a></li>
@@ -89,15 +94,13 @@
               </ul>
             </li>
             <!-- <li><a href="trainers.html">Trainers</a></li> -->
-            <li><a href="events.html">Events</a></li>
-            <li><a href="exam.html" class="">Exam</a></li>
-            <li><a href="contact.html" style="padding-right: 130px;">Contact</a></li>
+            <li><a href="../pages/events.html">Events</a></li>
+            <li><a href="../pages/exam.html" class="">Exam</a></li>
             <li>
-              <a
-                class="btn-getstarted"
-                href="contact.html"
-                >Get Started</a
-              >
+              <a href="../pages/contact.html" style="padding-right: 130px">Contact</a>
+            </li>
+            <li>
+              <a class="btn-getstarted" href="../pages/contact.html">Get Started</a>
             </li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -123,7 +126,7 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li class="current">Course Details</li>
           </ol>
         </div>
@@ -140,7 +143,7 @@
           <div class="row">
             <div class="col-lg-8">
               <img
-                src="assets/img/courses/Software Engineering.jpg"
+                src="../assets/img/courses/Software Engineering.jpg"
                 class="img-fluid"
                 alt=""
               />
@@ -162,7 +165,7 @@
           <div class="row gy-4">
             <div class="col-lg-6 order-1 order-lg-2">
               <img
-                src="assets/img/courses/data-science-page.png"
+                src="../assets/img/courses/ai-ml-page.png"
                 class="img-fluid"
                 alt=""
                 data-aos="slide-left"
@@ -176,8 +179,8 @@
                 data-aos-delay="10"
                 data-aos-easing="ease"
               >
-              DATA SCIENCE
-            </h3>
+                ARTIFICIAL INTELLIGENCE & MACHINE LEARNING
+              </h3>
               <p
                 class="fst-italic"
                 data-aos="slide-right"
@@ -188,7 +191,8 @@
                   class="bi bi-check2-circle"
                   style="font-size: 22px; color: green"
                 ></i>
-                Data science is a rapidly growing field that offers high-paying jobs and endless career opportunities across various industries. Data scientists analyze and interpret complex data to uncover insights that can drive decision-making and innovation.
+                AI and ML offer high-paying jobs with endless career
+                opportunities across industries.
               </p>
               <p
                 class="fst-italic"
@@ -200,7 +204,8 @@
                   class="bi bi-check2-circle"
                   style="font-size: 22px; color: green"
                 ></i>
-                Whether it's predicting market trends, improving customer experiences, or advancing healthcare with AI, data scientists make a real-world impact. With competitive salaries and opportunities to learn constantly, data science is a career path full of growth and excitement.
+                Professionals create innovative solutions like autonomous
+                vehicles, healthcare advancements, and climate modeling.
               </p>
               <p
                 class="fst-italic"
@@ -212,7 +217,8 @@
                   class="bi bi-check2-circle"
                   style="font-size: 22px; color: green"
                 ></i>
-                Work on innovative projects, from developing predictive models to creating life-changing solutions powered by machine learning.
+                The field provides competitive salaries, constant learning, and
+                exciting career growth.
               </p>
               <p
                 class="fst-italic"
@@ -224,7 +230,8 @@
                   class="bi bi-check2-circle"
                   style="font-size: 22px; color: green"
                 ></i>
-                The demand for data scientists is skyrocketing, providing excellent job security and the chance to shape the future with data-driven decisions.
+                With rising demand, AI and ML ensure strong job security and
+                opportunities to shape the future.
               </p>
             </div>
           </div>
@@ -237,7 +244,7 @@
           <!-- <div class="row gy-4"> -->
           <div class="d-flex flex-column">
             <div>
-              <h1>2 Year Program</h1>
+              <h1><b>2 Year Program</b></h1>
               <div
                 style="
                   display: flex;
@@ -255,7 +262,7 @@
                     padding: 10px;
                     color: white;
                     border-radius: 10px;
-                    background:  var(--accent-color);
+                    background: var(--accent-color);
 
                     flex: 1;
                     margin-right: 10px;
@@ -273,7 +280,7 @@
                     padding: 10px;
                     color: white;
                     border-radius: 10px;
-                    background:  var(--accent-color);
+                    background: var(--accent-color);
 
                     flex: 1;
                     margin-right: 10px;
@@ -298,7 +305,7 @@
                 style="
                   border: none;
                   height: 5px;
-                  background:  var(--accent-color);
+                  background: var(--accent-color);
 
                   flex: 1;
                   margin-right: 10px;
@@ -335,8 +342,8 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>Basic Mathematics</h5>
-              <h5>   0.5 Months</h5>
+              <h5>Basic Computer</h5>
+              <h5>0.5 Month</h5>
             </div>
             <div
               class="course-info d-flex justify-content-between align-items-center"
@@ -344,8 +351,8 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>Computer Fundamentals</h5>
-              <h5>   0.5 Months</h5>
+              <h5>Basic Mathematics</h5>
+              <h5>0.5 Month</h5>
             </div>
             <div
               class="course-info d-flex justify-content-between align-items-center"
@@ -371,7 +378,7 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>Bootstrap</h5>
+              <h5>Javascript</h5>
               <h5>1 Month</h5>
             </div>
             <div
@@ -385,7 +392,7 @@
                 style="
                   border: none;
                   height: 5px;
-                  background:  var(--accent-color);
+                  background: var(--accent-color);
 
                   flex: 1;
                   margin-right: 10px;
@@ -424,8 +431,7 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>Fundamentals of Python
-              </h5>
+              <h5>Fundamentals of Python</h5>
               <h5>1 Month</h5>
             </div>
             <div
@@ -434,8 +440,7 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>Python Libraries
-              </h5>
+              <h5>Python Libraries & Data Visualization Tools</h5>
               <h5>1 Month</h5>
             </div>
             <div
@@ -444,8 +449,7 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>Data Visualization
-              </h5>
+              <h5>DSA & Statistics</h5>
               <h5>1 Month</h5>
             </div>
             <div
@@ -454,8 +458,7 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>SQL & SQL Application
-              </h5>
+              <h5>Machine Learning</h5>
               <h5>1 Month</h5>
             </div>
             <div
@@ -469,7 +472,7 @@
                 style="
                   border: none;
                   height: 5px;
-                  background:  var(--accent-color);
+                  background: var(--accent-color);
 
                   flex: 1;
                   margin-right: 10px;
@@ -508,7 +511,7 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>DSA</h5>
+              <h5>SQL & Databases</h5>
               <h5>1 Month</h5>
             </div>
             <div
@@ -517,7 +520,7 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>Statistics</h5>
+              <h5>MLops & Machine Learning Projects</h5>
               <h5>1 Month</h5>
             </div>
             <div
@@ -526,19 +529,8 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>Mathematics for Data Science
-              </h5>
-              <h5>0.5 Month</h5>
-            </div>
-            <div
-              class="course-info d-flex justify-content-between align-items-center"
-              data-aos="fade-up"
-              data-aos-delay="10"
-              data-aos-offset="100"
-            >
-              <h5>ML & Applications
-              </h5>
-              <h5>1.5 Months</h5>
+              <h5>Deep Learning</h5>
+              <h5>2 Months</h5>
             </div>
             <div
               style="
@@ -551,7 +543,7 @@
                 style="
                   border: none;
                   height: 5px;
-                  background:  var(--accent-color);
+                  background: var(--accent-color);
 
                   flex: 1;
                   margin-right: 10px;
@@ -590,8 +582,7 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>ML Models & Applications
-              </h5>
+              <h5>Advanced Programming & Data Structures AI</h5>
               <h5>1 Month</h5>
             </div>
             <div
@@ -600,9 +591,26 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>Deep Learning
-              </h5>
-              <h5>3 Months</h5>
+              <h5>Core AI Skills</h5>
+              <h5>1 Month</h5>
+            </div>
+            <div
+              class="course-info d-flex justify-content-between align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="10"
+              data-aos-offset="100"
+            >
+              <h5>LLM’s or Pretrained Models</h5>
+              <h5>1 Month</h5>
+            </div>
+            <div
+              class="course-info d-flex justify-content-between align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="10"
+              data-aos-offset="100"
+            >
+              <h5>Preprocessing & Embeddings</h5>
+              <h5>1 Month</h5>
             </div>
             <div
               style="
@@ -615,7 +623,7 @@
                 style="
                   border: none;
                   height: 5px;
-                  background:  var(--accent-color);
+                  background: var(--accent-color);
 
                   flex: 1;
                   margin-right: 10px;
@@ -653,9 +661,8 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>End-to-End ML & DL Projects
-              </h5>
-              <h5>2 Months</h5>
+              <h5>Vector Databases</h5>
+              <h5>1 Month</h5>
             </div>
             <div
               class="course-info d-flex justify-content-between align-items-center"
@@ -663,8 +670,16 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>Foundational Large Language Model
-              </h5>
+              <h5>AI Agents & Workflows</h5>
+              <h5>1 Month</h5>
+            </div>
+            <div
+              class="course-info d-flex justify-content-between align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="10"
+              data-aos-offset="100"
+            >
+              <h5>Prompt Engineering</h5>
               <h5>0.5 Month</h5>
             </div>
             <div
@@ -673,8 +688,7 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>Prompt Engineering
-              </h5>
+              <h5>Multimodal AI Tasks & Development Tools</h5>
               <h5>0.5 Month</h5>
             </div>
             <div
@@ -683,8 +697,7 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>Embeddings and Vector Databases
-              </h5>
+              <h5>Popular AI Modelss</h5>
               <h5>1 Month</h5>
             </div>
             <div
@@ -698,7 +711,7 @@
                 style="
                   border: none;
                   height: 5px;
-                  background:  var(--accent-color);
+                  background: var(--accent-color);
 
                   flex: 1;
                   margin-right: 10px;
@@ -736,28 +749,7 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>Generative Agents
-              </h5>
-              <h5>0.5 Month</h5>
-            </div>
-            <div
-              class="course-info d-flex justify-content-between align-items-center"
-              data-aos="fade-up"
-              data-aos-delay="10"
-              data-aos-offset="100"
-            >
-              <h5>Basic Gen AI Models
-              </h5>
-              <h5>0.5 Month</h5>
-            </div>
-            <div
-              class="course-info d-flex justify-content-between align-items-center"
-              data-aos="fade-up"
-              data-aos-delay="10"
-              data-aos-offset="100"
-            >
-              <h5>Gen AI Tools
-              </h5>
+              <h5>Langchain, Llama, Gorq, and Other Important Tools</h5>
               <h5>1 Month</h5>
             </div>
             <div
@@ -766,9 +758,26 @@
               data-aos-delay="10"
               data-aos-offset="100"
             >
-              <h5>AI Databases & Gen AI Projects
-              </h5>
-              <h5>2 Months</h5>
+              <h5>RAG & Basic Gen AI Projects</h5>
+              <h5>1 Month</h5>
+            </div>
+            <div
+              class="course-info d-flex justify-content-between align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="10"
+              data-aos-offset="100"
+            >
+              <h5>NLP, GANs & AgentOps</h5>
+              <h5>1 Month</h5>
+            </div>
+            <div
+              class="course-info d-flex justify-content-between align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="10"
+              data-aos-offset="100"
+            >
+              <h5>End-to-End AI Projects</h5>
+              <h5>1 Month</h5>
             </div>
             <div
               style="
@@ -781,7 +790,7 @@
                 style="
                   border: none;
                   height: 5px;
-                  background:  var(--accent-color);
+                  background: var(--accent-color);
 
                   flex: 1;
                   margin-right: 10px;
@@ -810,342 +819,13 @@
               ></div>
             </div>
           </div>
-          <!-- Fifth Semester End -->
+          <!-- Sixth Semester End -->
 
           <!-- </div> -->
         </div>
         <!-- </div> -->
       </section>
-
-
-
-
-
-
-      <!-- 1 Year Program -->
-      <section id="about-us" class="section about-us courses-course-details">
-        <div class="container">
-          <!-- <div class="row gy-4"> -->
-          <div class="d-flex flex-column">
-            <div>
-              <h1>1 Year Program</h1>
-              <div
-                style="
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                "
-                data-aos="fade-up"
-                data-aos-delay="10"
-              >
-                <div
-                  style="
-                    border: none;
-                    /* height: 5px; */
-                    text-align: center;
-                    padding: 10px;
-                    color: white;
-                    border-radius: 10px;
-                    background:  var(--accent-color);
-
-                    flex: 1;
-                    margin-right: 10px;
-                  "
-                  data-aos="fade-up"
-                  data-aos-delay="10"
-                >
-                  TOPICS
-                </div>
-                <div
-                  style="
-                    border: none;
-                    /* height: 5px; */
-                    text-align: center;
-                    padding: 10px;
-                    color: white;
-                    border-radius: 10px;
-                    background:  var(--accent-color);
-
-                    flex: 1;
-                    margin-right: 10px;
-                  "
-                  data-aos="fade-up"
-                  data-aos-delay="10"
-                >
-                  DURATION
-                </div>
-              </div>
-            </div>
-
-            <!-- First Semester Start -->
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <div
-                style="
-                  border: none;
-                  height: 5px;
-                  background:  var(--accent-color);
-
-                  flex: 1;
-                  margin-right: 10px;
-                "
-                data-aos="flip-left"
-                data-aos-delay="10"
-                data-aos-offset="100"
-              ></div>
-              <span
-                style="font-size: 18px; color: #ff1493"
-                data-aos="fade-up"
-                data-aos-delay="10"
-                >★</span
-              >
-              <div
-                style="
-                  border: none;
-                  height: 5px;
-                  background-color: #29206f;
-                  flex: 1;
-                  margin-left: 10px;
-                "
-                data-aos="flip-left"
-                data-aos-delay="10"
-                data-aos-offset="100"
-              ></div>
-            </div>
-          </div>
-
-          <div>
-            <div
-              class="course-info d-flex justify-content-between align-items-center"
-              data-aos="fade-up"
-              data-aos-delay="10"
-              data-aos-offset="100"
-            >
-              <h5>Python</h5>
-              <h5>1 Month</h5>
-            </div>
-            <div
-              class="course-info d-flex justify-content-between align-items-center"
-              data-aos="fade-up"
-              data-aos-delay="10"
-              data-aos-offset="100"
-            >
-              <h5>Python Libraries and Data Visualization
-              </h5>
-              <h5>1.5 Months</h5>
-            </div>
-            <div
-              class="course-info d-flex justify-content-between align-items-center"
-              data-aos="fade-up"
-              data-aos-delay="10"
-              data-aos-offset="100"
-            >
-              <h5>Statistics & DSA
-              </h5>
-              <h5>1.5 Months</h5>
-            </div>
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <div
-                style="
-                  border: none;
-                  height: 5px;
-                  background:  var(--accent-color);
-
-                  flex: 1;
-                  margin-right: 10px;
-                "
-                data-aos="flip-left"
-                data-aos-delay="10"
-                data-aos-offset="100"
-              ></div>
-              <span
-                style="font-size: 18px; color: #ff1493"
-                data-aos="fade-up"
-                data-aos-delay="10"
-                >★</span
-              >
-              <div
-                style="
-                  border: none;
-                  height: 5px;
-                  background-color: #29206f;
-                  flex: 1;
-                  margin-left: 10px;
-                "
-                data-aos="flip-left"
-                data-aos-delay="10"
-                data-aos-offset="100"
-              ></div>
-            </div>
-          </div>
-          <!-- First Semester End -->
-
-          <!-- Second Semester Start -->
-          <div>
-            <div
-              class="course-info d-flex justify-content-between align-items-center"
-              data-aos="fade-up"
-              data-aos-delay="10"
-              data-aos-offset="100"
-            >
-              <h5>Machine Learning or ML Projects
-              </h5>
-              <h5>2 Months</h5>
-            </div>
-            <div
-              class="course-info d-flex justify-content-between align-items-center"
-              data-aos="fade-up"
-              data-aos-delay="10"
-              data-aos-offset="100"
-            >
-              <h5>Deep Learning or DL Projects
-              </h5>
-              <h5>2 Months</h5>
-            </div>
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <div
-                style="
-                  border: none;
-                  height: 5px;
-                  background:  var(--accent-color);
-
-                  flex: 1;
-                  margin-right: 10px;
-                "
-                data-aos="flip-left"
-                data-aos-delay="10"
-                data-aos-offset="100"
-              ></div>
-              <span
-                style="font-size: 18px; color: #ff1493"
-                data-aos="fade-up"
-                data-aos-delay="10"
-                >★</span
-              >
-              <div
-                style="
-                  border: none;
-                  height: 5px;
-                  background-color: #29206f;
-                  flex: 1;
-                  margin-left: 10px;
-                "
-                data-aos="flip-left"
-                data-aos-delay="10"
-                data-aos-offset="100"
-              ></div>
-            </div>
-          </div>
-          <!-- Second Semester End -->
-
-          <!-- Third Semester Start -->
-          <div>
-            <div
-              class="course-info d-flex justify-content-between align-items-center"
-              data-aos="fade-up"
-              data-aos-delay="10"
-              data-aos-offset="100"
-            >
-              <h5>SQL and NoSQL
-              </h5>
-              <h5>1 Month</h5>
-            </div>
-            <div
-              class="course-info d-flex justify-content-between align-items-center"
-              data-aos="fade-up"
-              data-aos-delay="10"
-              data-aos-offset="100"
-            >
-              <h5>Basics of Gen AI
-              </h5>
-              <h5>1 Month</h5>
-            </div>
-            <div
-              class="course-info d-flex justify-content-between align-items-center"
-              data-aos="fade-up"
-              data-aos-delay="10"
-              data-aos-offset="100"
-            >
-              <h5>Fundamentals of Gen AI
-              </h5>
-              <h5>1 Month</h5>
-            </div>
-            <div
-              class="course-info d-flex justify-content-between align-items-center"
-              data-aos="fade-up"
-              data-aos-delay="10"
-              data-aos-offset="100"
-            >
-              <h5>LLM & Gen AI Projects
-              </h5>
-              <h5>1 Month</h5>
-            </div>
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <div
-                style="
-                  border: none;
-                  height: 5px;
-                  background:  var(--accent-color);
-
-                  flex: 1;
-                  margin-right: 10px;
-                "
-                data-aos="flip-left"
-                data-aos-delay="10"
-                data-aos-offset="100"
-              ></div>
-              <span
-                style="font-size: 18px; color: #ff1493"
-                data-aos="fade-up"
-                data-aos-delay="10"
-                >★</span
-              >
-              <div
-                style="
-                  border: none;
-                  height: 5px;
-                  background-color: #29206f;
-                  flex: 1;
-                  margin-left: 10px;
-                "
-                data-aos="flip-left"
-                data-aos-delay="10"
-                data-aos-offset="100"
-              ></div>
-            </div>
-          </div>
-          <!-- Third Semester End -->
-
-          <!-- </div> -->
-        </div>
-        <!-- </div> -->
-      </section>
-
-
-
+      w
 
       <!-- Testimonials Section -->
       <section id="testimonials" class="testimonials section">
@@ -1188,13 +868,13 @@
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
                     <img
-                      src="assets/img/tips-g-students/dhruv-testmonial.JPG"
+                      src="../assets/img/tips-g-students/depender-testmonial.PNG"
                       class="testimonial-img"
                       alt=""
                     />
-                    <h3>Dhruv Gupta</h3>
+                    <h3>Depender</h3>
                     <!-- <h4>Software &amp; Student</h4> -->
-                    <h4>Data Science Trainee</h4>
+                    <h4>AI/ML Trainee</h4>
                     <div class="stars">
                       <i class="bi bi-star-fill"></i
                       ><i class="bi bi-star-fill"></i
@@ -1205,7 +885,12 @@
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
                       <span
-                        >TIPS-G Alwar provided a thorough understanding of Data Science. The real-world projects and the opportunity to collaborate with industry professionals enhanced my learning experience and prepared me for a career in this field.</span
+                        >TIPS-G Alwar's AI/ML program has been a game-changer
+                        for me. The hands-on projects and real-world datasets
+                        helped me understand machine learning algorithms and
+                        artificial intelligence applications. The guidance from
+                        expert faculty made complex topics simple and
+                        clear.</span
                       >
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
@@ -1218,12 +903,12 @@
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
                     <img
-                      src="assets/img/tips-g-students/ayush-testmonial.PNG"
+                      src="../assets/img/tips-g-students/anuj-testmonial.PNG"
                       class="testimonial-img"
                       alt=""
                     />
-                    <h3>Ayush</h3>
-                    <h4>Data Science Trainee</h4>
+                    <h3>Anuj</h3>
+                    <h4>AI/ML Trainee</h4>
                     <div class="stars">
                       <i class="bi bi-star-fill"></i
                       ><i class="bi bi-star-fill"></i
@@ -1234,7 +919,12 @@
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
                       <span
-                        >Learning Data Science at TIPS-G Alwar was a great experience. The practical projects and insights from industry professionals gave me a solid foundation in the field. I feel confident in my skills thanks to this coaching.</span
+                        >AI/ML course at TIPS-G Alwar is exceptional. I
+                        gained deep insights into neural networks, data
+                        preprocessing, and model training. The practical
+                        assignments and industry-focused curriculum have
+                        prepared me to tackle real-world AI challenges
+                        confidently.</span
                       >
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
@@ -1247,12 +937,12 @@
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
                     <img
-                      src="assets/img/tips-g-students/anshul-testmonial.PNG"
+                      src="../assets/img/tips-g-students/deepanshusaini-testmonial.JPG"
                       class="testimonial-img"
                       alt=""
                     />
-                    <h3>Anshul Choudhary</h3>
-                    <h4>Data Science Trainee</h4>
+                    <h3>Deepanshu Saini</h3>
+                    <h4>AI/ML Trainee</h4>
                     <div class="stars">
                       <i class="bi bi-star-fill"></i
                       ><i class="bi bi-star-fill"></i
@@ -1263,7 +953,7 @@
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
                       <span
-                        >TIPS-G Alwar offers a hands-on approach to Data Science, which helped me bridge the gap between theory and practice. The teaching methods are up-to-date, and the internships allowed me to apply what I learned in real-world scenarios</span
+                        >The AI/ML course at TIPS-G Alwar is truly exceptional. I gained in-depth knowledge of neural networks, data preprocessing, and model training. The industry-focused curriculum, combined with practical assignments, has equipped me with the skills and confidence to solve real-world AI challenges.</span
                       >
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
@@ -1276,12 +966,12 @@
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
                     <img
-                      src="assets/img/tips-g-students/vipul-testmonial.PNG"
+                      src="../assets/img/tips-g-students/gaurav.JPG"
                       class="testimonial-img"
                       alt=""
                     />
-                    <h3>Vipul</h3>
-                    <h4>Data Science Trainee</h4>
+                    <h3>Gaurav</h3>
+                    <h4>AI/ML Trainee</h4>
                     <div class="stars">
                       <i class="bi bi-star-fill"></i
                       ><i class="bi bi-star-fill"></i
@@ -1292,35 +982,7 @@
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
                       <span
-                        >TIPS-G Alwar is an ideal place for anyone pursuing Data Science. The blend of expert teaching, industry projects, and internships makes it a great learning environment. I gained hands-on experience that has been crucial for my career.</span
-                      >
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial-item">
-                    <img
-                      src="assets/img/tips-g-students/lokendra-testmonial.PNG"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Lokendra</h3>
-                    <h4>Data Science Trainee</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i
-                      ><i class="bi bi-star-fill"></i
-                      ><i class="bi bi-star-fill"></i
-                      ><i class="bi bi-star-fill"></i
-                      ><i class="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span
-                        >TIPS-G Alwar is an ideal place for anyone pursuing Data Science. The blend of expert teaching, industry projects, and internships makes it a great learning environment. I gained hands-on experience that has been crucial for my career.</span
+                        >The AI/ML course at TIPS-G Alwar stands out for its practical approach and real-world applications. From neural networks to data preprocessing and model training, every topic is covered in depth. The interactive sessions and industry-relevant projects have given me the confidence to tackle AI challenges effectively.</span
                       >
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
@@ -1328,22 +990,14 @@
                 </div>
               </div>
               <!-- End testimonial item -->
+
             </div>
             <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
       <!-- /Testimonials Section -->
-
-
-
-
     </main>
-
-
-    
-
-
 
     <footer
       id="footer"
@@ -1353,14 +1007,14 @@
       <div class="container footer-top">
         <div class="row" style="display: flex; justify-content: space-around">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="../index.html" class="logo d-flex align-items-center">
               <span class="sitename"
                 >TIPS-G <br />
                 ALWAR</span
               >
             </a>
             <div class="footer-contact pt-3">
-              <p>First floor, Shri hari laxmi tower,</p>
+              <p>1<sup>st</sup> Floor, Shri Hari Laxmi Tower,</p>
               <p>Bhagat Singh Circle,</p>
               <p>Alwar, Rajasthan 301001</p>
               <p class="mt-3">
@@ -1380,20 +1034,20 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-<li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About us</a></li>
-              <li><a href="courses.html">Courses</a></li>
-              <li><a href="events.html">Events</a></li>
-              <li><a href="exam.html">Exam</a></li>
-              <li><a href="terms.html">Terms</a></li>
-              <li><a href="privacypolicy.html">Privacy policy</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../pages/about.html">About us</a></li>
+              <li><a href="../pages/courses.html">Courses</a></li>
+              <li><a href="../pages/events.html">Events</a></li>
+              <li><a href="../pages/exam.html">Exam</a></li>
+              <li><a href="../pages/terms.html">Terms</a></li>
+              <li><a href="../pages/privacypolicy.html">Privacy policy</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Courses</h4>
             <ul>
-              <li><a href="software.html">Software Engineering</a></li>
+              <li><a href="software.html">Software Development</a></li>
               <li><a href="datascience.html">Data Science</a></li>
               <li><a href="blockchain.html">Blockchain Technology</a></li>
               <li><a href="ai-ml.html">AI/ML</a></li>
@@ -1404,12 +1058,10 @@
         </div>
       </div>
 
-      <div
-        class="container copyright text-center mt-4"
-      >
+      <div class="container copyright text-center mt-4">
         <p>
           © <span>Copyright</span>
-          <strong class="px-1 sitename">Tips-g Alwar</strong>
+          <strong>TIPS-G Alwar</strong>
           <span>All Rights Reserved</span>
         </p>
       </div>
@@ -1427,14 +1079,14 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>

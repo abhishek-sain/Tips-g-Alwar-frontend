@@ -8,7 +8,7 @@
     <meta name="keywords" content="" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/favicon.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Fonts -->
@@ -21,22 +21,25 @@
 
     <!-- Vendor CSS Files -->
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
   </head>
 
   <body class="about-page">
@@ -44,7 +47,7 @@
       <div
         class="container-fluid container-xl position-relative d-flex align-items-center"
       >
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <a href="../index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
           <h1
@@ -60,7 +63,7 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li>
-              <a href="index.html">Home<br /></a>
+              <a href="../index.html">Home<br /></a>
             </li>
             <li><a href="about.html" class="active">About</a></li>
             <!-- <li><a href="courses.html" class="active">Courses</a></li> -->
@@ -70,12 +73,22 @@
                 <i class="bi bi-chevron-down toggle-dropdown"></i
               ></a>
               <ul>
-                <li><a href="software.html">Software Engineering</a></li>
-                <li><a href="datascience.html">Data Science</a></li>
-                <li><a href="digitalmarketing.html">Digital Marketing</a></li>
-                <li><a href="blockchain.html">Blockchain Technology</a></li>
-                <li><a href="cybersecurity.html">Cybersecurity</a></li>
-                <li><a href="ai-ml.html">AI/ML</a></li>
+                <li>
+                  <a href="../courses/software.html">Software Development</a>
+                </li>
+                <li><a href="../courses/datascience.html">Data Science</a></li>
+                <li>
+                  <a href="../courses/digitalmarketing.html"
+                    >Digital Marketing</a
+                  >
+                </li>
+                <li>
+                  <a href="../courses/blockchain.html">Blockchain Technology</a>
+                </li>
+                <li>
+                  <a href="../courses/cybersecurity.html">Cybersecurity</a>
+                </li>
+                <li><a href="../courses/ai-ml.html">AI/ML</a></li>
               </ul>
             </li>
             <!-- <li><a href="trainers.html">Trainers</a></li> -->
@@ -85,11 +98,7 @@
               <a href="contact.html" style="padding-right: 130px">Contact</a>
             </li>
             <li>
-              <a
-                class="btn-getstarted"
-                href="contact.html"
-                >Get Started</a
-              >
+              <a class="btn-getstarted" href="contact.html">Get Started</a>
             </li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -100,9 +109,6 @@
     </header>
 
     <main class="main">
-      
-      
- 
       <!-- Page Title -->
       <div class="page-title" data-aos="fade">
         <div class="heading">
@@ -121,9 +127,18 @@
             </div>
           </div> -->
           <div class="container-fluid p-0 position-relative hero">
-            <video id="indexVideo" autoplay muted loop class="video-background w-100">
+            <video
+              id="indexVideo"
+              autoplay
+              muted
+              loop
+              class="video-background w-100"
+            >
               <!-- <source src="assets/img/Blue Modern Technology YouTube Intro-main.mp4" type="video/mp4"> -->
-              <source src="assets/img/component/about-low.mp4" type="video/mp4">
+              <source
+                src="../assets/img/component/about-low.mp4"
+                type="video/mp4"
+              />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -131,7 +146,7 @@
         <nav class="breadcrumbs">
           <div class="container">
             <ol>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="../index.html">Home</a></li>
               <li class="current">About<br /></li>
             </ol>
           </div>
@@ -149,7 +164,7 @@
               data-aos-delay="100"
             >
               <img
-                src="assets/img/campus/IMG_5370.jpg"
+                src="../assets/img/campus/IMG_5370.jpg"
                 class="img-fluid about-first-image"
                 alt=""
               />
@@ -159,7 +174,8 @@
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <h3>Why Choose TIPS-G Alwar for Your IT Education?</h3><hr>
+              <h3>Why Choose TIPS-G Alwar for Your IT Education?</h3>
+              <hr />
               <p class="fst-italic">
                 At TIPS-G Alwar, we provide an industry-focused education that
                 combines expert guidance, hands-on learning, and real-world
@@ -280,29 +296,31 @@
         <div class="container">
           <div class="row gy-4">
             <div
-            class="col-lg-6 order-1 order-lg-2"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <img
-              src="assets/img/tips-g/21.png"
-              class="img-fluid about-first-image"
-              alt=""
-            />
-          </div>
+              class="col-lg-6 order-1 order-lg-2"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img
+                src="../assets/img/tips-g/21.png"
+                class="img-fluid about-first-image"
+                alt=""
+              />
+            </div>
             <div
               class="col-lg-6 order-2 order-lg-1 content"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <h3>Education For Future-Ready Jobs</h3><hr>
+              <h3>Education For Future-Ready Jobs</h3>
+              <hr />
               <p class="fst-italic">
-                At TIPS-G Alwar, we do more than impart knowledge—we empower you with the
-skills needed for success in the ever-evolving tech industry. Our industry aligned curriculum, hands-on learning approach, and expert mentorship
-ensure that you're not only prepared for the future but equipped to thrive in it.
-With our 100% job-oriented program, we are dedicated to transforming your
-passion for technology into a rewarding career.
-
+                At TIPS-G Alwar, we do more than impart knowledge—we empower you
+                with the skills needed for success in the ever-evolving tech
+                industry. Our industry aligned curriculum, hands-on learning
+                approach, and expert mentorship ensure that you're not only
+                prepared for the future but equipped to thrive in it. With our
+                100% job-oriented program, we are dedicated to transforming your
+                passion for technology into a rewarding career.
               </p>
               <ul>
                 <li>
@@ -378,7 +396,7 @@ passion for technology into a rewarding career.
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
                     <img
-                      src="assets/img/tips-g-students/chetna-testmonial.PNG"
+                      src="../assets/img/tips-g-students/chetna-testmonial.PNG"
                       class="testimonial-img"
                       alt=""
                     />
@@ -411,7 +429,7 @@ passion for technology into a rewarding career.
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
                     <img
-                      src="assets/img/tips-g-students/dhruv-testmonial.JPG"
+                      src="../assets/img/tips-g-students/dhruv-testmonial.JPG"
                       class="testimonial-img"
                       alt=""
                     />
@@ -445,7 +463,7 @@ passion for technology into a rewarding career.
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
                     <img
-                      src="assets/img/tips-g-students/vipul-testmonial.PNG"
+                      src="../assets/img/tips-g-students/vipul-testmonial.PNG"
                       class="testimonial-img"
                       alt=""
                     />
@@ -478,12 +496,12 @@ passion for technology into a rewarding career.
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
                     <img
-                      src="assets/img/tips-g-students/rishav-testmonial-second.PNG.JPG"
+                      src="../assets/img/tips-g-students/rishav-testmonial-second.PNG.JPG"
                       class="testimonial-img"
                       alt=""
                     />
                     <h3>Rishav Jain</h3>
-                    <h4>Software Engineering</h4>
+                    <h4>Software Development</h4>
                     <div class="stars">
                       <i class="bi bi-star-fill"></i
                       ><i class="bi bi-star-fill"></i
@@ -510,7 +528,7 @@ passion for technology into a rewarding career.
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
                     <img
-                      src="assets/img/tips-g-students/neha-testmonial.PNG"
+                      src="../assets/img/tips-g-students/neha-testmonial.PNG"
                       class="testimonial-img"
                       alt=""
                     />
@@ -553,14 +571,14 @@ passion for technology into a rewarding career.
       <div class="container footer-top">
         <div class="row" style="display: flex; justify-content: space-around">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="../index.html" class="logo d-flex align-items-center">
               <span class="sitename"
                 >TIPS-G <br />
                 ALWAR</span
               >
             </a>
             <div class="footer-contact pt-3">
-              <p>First floor, Shri hari laxmi tower,</p>
+              <p>1<sup>st</sup> Floor, Shri Hari Laxmi Tower,</p>
               <p>Bhagat Singh Circle,</p>
               <p>Alwar, Rajasthan 301001</p>
               <p class="mt-3">
@@ -580,7 +598,7 @@ passion for technology into a rewarding career.
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="../index.html">Home</a></li>
               <li><a href="about.html">About us</a></li>
               <li><a href="courses.html">Courses</a></li>
               <li><a href="events.html">Events</a></li>
@@ -593,22 +611,27 @@ passion for technology into a rewarding career.
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Courses</h4>
             <ul>
-              <li><a href="software.html">Software Engineering</a></li>
-              <li><a href="datascience.html">Data Science</a></li>
-              <li><a href="blockchain.html">Blockchain Technology</a></li>
-              <li><a href="ai-ml.html">AI/ML</a></li>
-              <li><a href="cybersecurity.html">Cybersecurity</a></li>
-              <li><a href="digitalmarketing.html">Digital Marketing</a></li>
+              <li>
+                <a href="../courses/software.html">Software Development</a>
+              </li>
+              <li><a href="../courses/datascience.html">Data Science</a></li>
+              <li>
+                <a href="../courses/blockchain.html">Blockchain Technology</a>
+              </li>
+              <li><a href="../courses/ai-ml.html">AI/ML</a></li>
+              <li><a href="../courses/cybersecurity.html">Cybersecurity</a></li>
+              <li>
+                <a href="../courses/digitalmarketing.html">Digital Marketing</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div
-        class="container copyright text-center mt-4">
+      <div class="container copyright text-center mt-4">
         <p>
           © <span>Copyright</span>
-          <strong class="px-1 sitename">Tips-g Alwar</strong>
+          <strong>TIPS-G Alwar</strong>
           <span>All Rights Reserved</span>
         </p>
       </div>
@@ -626,14 +649,14 @@ passion for technology into a rewarding career.
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>
