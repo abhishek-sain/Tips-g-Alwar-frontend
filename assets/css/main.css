@@ -825,10 +825,10 @@ h6 {
   /* height: 90vh; */
   /* color-mix(in srgb, var(--default-color), transparent 90%); */
 }
-/* .breadcrumbs{
-  
-  background-color: #000938;
-} */
+.breadcrumbs{
+  display: none;
+  /* background-color: #000938; */
+}
 .page-title .heading h1 {
   font-size: 38px;
   font-weight: 700;
